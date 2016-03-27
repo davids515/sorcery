@@ -1,0 +1,13 @@
+<h1>Registration</h1>
+
+<%= simple_form_for @user, url: registration_path do |f| %>
+  <div class="form-inputs">
+    <%= f.input :email %>
+    <%= f.input :password %>
+    <%= f.input :password_confirmation %>
+  </div>
+
+  <div class="forms-actions">
+    <%= f.submit "Register", class: 'btn btn-primary' %>
+  </div>
+<% end %>
